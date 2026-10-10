@@ -40,3 +40,9 @@ body.has-inner-view .back-to-overview{margin-bottom:14px!important}
 @media(max-width:460px){
  .metric-grid,.pipeline,.bottom-grid,.view .mail-summary-grid{grid-template-columns:minmax(0,1fr)!important}
 }
+
+/* Text Forensics view: retain sidebar, remove shared page header only */
+body.forensics-focus .topbar,body.forensics-focus #backToOverview{display:none!important}
+body.forensics-focus .main{padding-top:22px!important}
+body.forensics-focus #forensics .section-heading .eyebrow{display:none}
+body.forensics-focus #forensics .section-heading h2{margin-top:0!important}
