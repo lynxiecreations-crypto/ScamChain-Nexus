@@ -1,0 +1,42 @@
+/* UX consolidation and readability fixes — ScamChain Nexus */
+:root{--sc-ink:#172b42;--sc-muted:#536a82}
+html,body{max-width:100%;overflow-x:hidden}
+.main,.view,.panel,.hero-grid,.hero-copy,.hero-visual{min-width:0}
+body.has-inner-view .topbar{display:none!important}
+body.has-inner-view .main{padding-top:18px!important}
+body.has-inner-view .back-to-overview{margin-bottom:14px!important}
+.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,.95fr)!important}
+.hero-visual{overflow:hidden!important}
+.visual-top{align-items:flex-start!important}
+.visual-top>span{min-width:0;overflow-wrap:anywhere}
+.visual-top .live{white-space:normal;text-align:right}
+.mini-graph{max-width:100%;overflow:hidden}
+.mini-graph svg{width:100%;height:auto;max-width:100%}
+.view .section-heading{min-width:0;flex-wrap:wrap}
+.view .section-heading>div{min-width:0;max-width:100%}
+.view h2,.view h3,.view p,.view li,.view label,.view small,.view strong,.view span{overflow-wrap:anywhere}
+.view input,.view textarea,.view select{max-width:100%;min-width:0}
+.view .panel,.view article,.view .empty-state,.view .finding,.view .event-card{min-width:0}
+.view .mail-workspace,.view .email-intro-grid,.view .quickcheck-layout,.view .intake-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}
+.view .mail-auth-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.nav-group-label{white-space:normal!important}
+.nav button{white-space:normal!important}
+.nav button.nav-featured{white-space:normal!important}
+@media(max-width:1050px){
+ .shell{grid-template-columns:220px minmax(0,1fr)!important}
+ .hero-grid,.view .mail-workspace,.view .email-intro-grid,.view .quickcheck-layout,.view .intake-layout{grid-template-columns:minmax(0,1fr)!important}
+ .topbar{flex-direction:column}
+ .top-meta{justify-content:flex-start}
+}
+@media(max-width:720px){
+ .shell{grid-template-columns:minmax(0,1fr)!important}
+ .sidebar{position:relative;height:auto;max-height:none}
+ .nav{display:flex;flex-direction:column;overflow:visible}
+ .nav-group-label{white-space:normal!important}
+ .main{padding:16px!important}
+ .metric-grid,.pipeline,.bottom-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .view .mail-auth-grid{grid-template-columns:1fr!important}
+}
+@media(max-width:460px){
+ .metric-grid,.pipeline,.bottom-grid,.view .mail-summary-grid{grid-template-columns:minmax(0,1fr)!important}
+}
