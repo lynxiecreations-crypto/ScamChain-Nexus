@@ -1,0 +1,55 @@
+/* Reference-inspired investigation dashboard for ScamChain Nexus */
+.investigation-dashboard{display:grid;gap:16px;margin:0 0 28px;color:#182b43}
+.dash-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;padding:4px 0 2px}
+.dash-heading h2{font-size:25px!important;margin:5px 0 4px!important;letter-spacing:-.035em}
+.dash-heading p{margin:0;color:#738198;font-size:12px;line-height:1.5}
+.dash-actions{display:flex;gap:7px;flex-wrap:wrap}
+.dash-btn{background:#fff;border:1px solid #d9e3f0;border-radius:8px;padding:9px 11px;color:#3158b8;font-size:11px;font-weight:750;cursor:pointer;box-shadow:0 2px 5px #203c6708}
+.dash-btn:hover,.dash-link:hover{background:#edf3ff;border-color:#b8ccf8}
+.dash-summary-grid{display:grid;grid-template-columns:1.45fr 1fr .78fr;gap:13px}
+.dash-analysis-grid{display:grid;grid-template-columns:.95fr 1.35fr .85fr;gap:13px}
+.dash-card{min-width:0;background:#fff;border:1px solid #e1e8f1;border-radius:12px;padding:17px 17px 14px;box-shadow:0 4px 16px #243d6008}
+.dash-card-title{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;font-weight:800;color:#24364d;padding-bottom:13px;border-bottom:1px solid #edf0f5}
+.dash-chip{background:#f1f5fb;border-radius:5px;padding:4px 6px;color:#8190a5;font-size:8px;letter-spacing:.08em;font-weight:800}
+.dash-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding-top:15px}
+.dash-stats>div{display:flex;flex-direction:column;gap:5px;min-width:0}
+.dash-stats small,.dash-coverage small{color:#78879a;font-size:10px}
+.dash-stats strong{font-size:28px;line-height:1;color:#1d2d43;letter-spacing:-.04em}
+.dash-stats span{color:#8a97a8;font-size:9px;line-height:1.35}
+.dash-coverage{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:18px 0 12px}
+.dash-coverage>div{display:flex;flex-direction:column;gap:6px}
+.dash-coverage strong{font-size:23px;color:#24364d}
+.dash-icon{display:grid;place-items:center;width:28px;height:28px;border-radius:8px;font-size:16px}
+.dash-icon.purple{color:#7954d2;background:#f0eaff}.dash-icon.coral{color:#d45b6f;background:#ffedf0}
+.dash-note{font-size:9px!important;color:#8a97a8!important;line-height:1.45!important;margin:0}
+.dash-flag-total{display:flex;align-items:baseline;gap:8px;padding:16px 0 12px}
+.dash-flag-total strong{font-size:30px;letter-spacing:-.04em}.dash-flag-total span{font-size:10px;color:#8793a4;line-height:1.35}
+.dash-flag-legend{display:grid;gap:9px}.dash-flag-legend span{display:flex;align-items:center;gap:7px;font-size:10px;color:#69798e}.dash-flag-legend b{margin-left:auto;color:#26374d}
+.dash-flag-legend i,.dash-severity i{display:inline-block;width:8px;height:8px;border-radius:3px}.high{background:#e64f59}.medium{background:#f0a53d}.low{background:#376ee8}
+.dash-chart-row{display:flex;align-items:center;gap:20px;padding:17px 0 12px}
+.dash-donut{width:116px;height:116px;flex:0 0 116px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#376ee8 0deg 240deg,#f0a53d 240deg 300deg,#e64f59 300deg 330deg,#e5ebf4 330deg 360deg);position:relative}
+.dash-donut:before{content:"";position:absolute;inset:13px;border-radius:50%;background:white}
+.dash-donut>div{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:3px}
+.dash-donut strong{font-size:23px;line-height:1}.dash-donut small{font-size:9px;color:#8390a2}
+.dash-severity{display:grid;gap:11px}.dash-severity span{display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:10px;color:#718096}.dash-severity b{color:#26374d}
+.dash-footnote{border-top:1px solid #edf0f5;padding-top:10px;font-size:9px;color:#8a97a8;line-height:1.4}
+.dash-link{border:0;background:transparent;color:#4169ce;font-size:10px;font-weight:750;cursor:pointer;padding:5px}
+.dash-bars{padding-top:7px;display:grid;gap:3px}
+.dash-bars>button{display:flex;align-items:center;gap:10px;text-align:left;padding:10px 0;border:0;border-bottom:1px solid #f0f3f7;background:transparent;cursor:pointer;color:#24364d}
+.dash-bars>button:last-child{border-bottom:0}
+.dash-bar-icon,.dash-tile-icon{display:grid;place-items:center;width:29px;height:29px;border-radius:8px;font-weight:800;flex:0 0 auto}
+.dash-bar-icon.blue{background:#eaf0ff;color:#3968dc}.dash-bar-icon.violet{background:#f1eaff;color:#8056d0}.dash-bar-icon.rose{background:#ffedf1;color:#d04f73}.dash-bar-icon.amber{background:#fff3df;color:#b77b20}
+.dash-bar-label{display:grid;gap:4px;min-width:0}.dash-bar-label b{font-size:10px}.dash-bar-label small{font-size:9px;color:#8995a5}
+.dash-bar-action{margin-left:auto;color:#4269cb;font-size:9px;white-space:nowrap}
+.flags-list-card{grid-column:auto}
+.dash-recent-empty{min-height:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px}
+.dash-empty-icon{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#e4f8ef;color:#1e9b70;font-size:15px}
+.dash-recent-empty b{font-size:10px;color:#52647b}.dash-recent-empty small{font-size:9px;max-width:190px;color:#8995a5;line-height:1.4}
+.dash-lower-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.dash-action-tile{display:flex;align-items:center;gap:10px;text-align:left;padding:12px;background:#fff;border:1px solid #e1e8f1;border-radius:10px;cursor:pointer;color:#24364d}
+.dash-action-tile>span:nth-child(2){display:grid;gap:4px;min-width:0}.dash-action-tile b{font-size:10px}.dash-action-tile small{font-size:9px;color:#8793a4}.dash-action-tile>span:last-child{margin-left:auto;color:#5c78bb}
+.dash-tile-icon.orange{background:#fff1df;color:#b87917}.dash-tile-icon.teal{background:#e1f8f5;color:#138e83}.dash-tile-icon.green{background:#e3f8ea;color:#26894d}
+.dash-action-tile:hover{border-color:#bfd0f5;transform:translateY(-1px)}
+@media(max-width:1150px){.dash-summary-grid{grid-template-columns:1fr 1fr}.flag-card{grid-column:span 2}.dash-analysis-grid{grid-template-columns:1fr 1.2fr}.flags-list-card{grid-column:span 2}}
+@media(max-width:760px){.dash-heading{align-items:flex-start;flex-direction:column}.dash-summary-grid,.dash-analysis-grid,.dash-lower-actions{grid-template-columns:1fr}.flag-card,.flags-list-card{grid-column:auto}.dash-chart-row{gap:13px}.dash-stats strong{font-size:24px}.dash-actions{width:100%}.dash-btn{flex:1}}
+/* Keep the original interactive feature views intact below the dashboard. */
